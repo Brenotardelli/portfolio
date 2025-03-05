@@ -1,0 +1,14 @@
+:root {
+  --bg-color: #030408;
+  --secondary-bg: #010a15;
+  --dec-color: #00ec64;
+  --text-color: #b3b4b5;
+  --head-color: #e6e6e6;
+  --font-size: 2rem;
+  --font-family: "Roboto", sans-serif;
+  --h1: 7.2rem;
+  --h2: 6.4rem;
+  --h3: 3.2rem;
+  --line-height-text: 120%;
+  --line-height-head: 140%;
+}

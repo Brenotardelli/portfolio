@@ -1,0 +1,117 @@
+.projects {
+  padding: 16rem 0 6.4rem 1.6rem;
+}
+
+.projects.grid {
+  justify-items: start;
+}
+
+.projects .head-xxl {
+  text-align: center;
+  position: relative;
+}
+
+.projects .head-xxl::before {
+  content: url("../img/proj-dec.svg");
+  position: absolute;
+  z-index: -1;
+  transform: translate(-30%, -10%);
+}
+
+.projects .head-l {
+  display: flex;
+  align-items: center;
+}
+
+.projects .head-l::before {
+  content: "";
+  display: inline-block;
+  width: 6rem;
+  height: 0.2rem;
+  background: linear-gradient(45deg, rgba(0, 236, 100, 1) 0%, rgba(0, 134, 57, 1) 100%);
+  border-radius: 0.8rem;
+  margin-right: 0.6rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 3.2rem;
+  align-items: center;
+  background-color: var(--secondary-bg);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 0.8rem;
+}
+
+.project-info {
+  padding: 3.2rem 6.4rem;
+}
+
+.project-p {
+  max-width: 50rem;
+  margin: 2.4rem 0 2rem 0;
+}
+
+.project-img {
+  border-radius: 0 0.8rem 0.8rem 0;
+}
+
+.projects-flex {
+  margin: 6.4rem 0;
+}
+
+.techs-flex {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  margin-bottom: 2.8rem;
+}
+
+.techs-flex li {
+  position: relative;
+}
+
+.techs-flex li::after {
+  content: "";
+  position: absolute;
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: var(--text-color);
+  border-radius: 50%;
+  top: 50%;
+  right: -2.3rem;
+  transform: translate(-50%, -50%);
+}
+
+.techs-flex li:last-child::after {
+  display: none;
+}
+
+.btn-proj-flex {
+  display: flex;
+  align-items: center;
+  gap: 2.8rem;
+}
+.project-btn {
+  padding: 0.8rem 1.6rem;
+  color: var(--head-color);
+  background-color: rgba(230, 230, 230, 0.5);
+  border-radius: 0.8rem;
+  border: 0.2rem solid var(--head-color);
+  display: flex;
+  align-items: center;
+}
+
+.project-btn.git::after {
+  content: url("../img/mdi_github.svg");
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-left: 0.8rem;
+}
+
+.project-btn.live::after {
+  content: url("../img/live.svg");
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-left: 0.8rem;
+}

@@ -1,0 +1,80 @@
+.skills {
+  padding: 16rem 0 6.4rem 1.6rem;
+  position: relative;
+}
+
+.skills::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.2rem;
+  background-color: var(--text-color);
+  opacity: 25%;
+}
+
+.skills.grid {
+  grid-template-columns: 1fr 2fr;
+}
+
+.skills .head-xl {
+  max-width: 30rem;
+}
+
+.skills .head-xl::before {
+  content: url("../img/dec-title.svg");
+  display: inline-block;
+  margin-right: 0.8rem;
+}
+
+.icons-flex {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+
+.icons-flex li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+@media (max-width: 1050px) {
+  .icons-flex {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 950px) {
+  .skills.grid {
+    grid-template-columns: 1fr;
+  }
+  .icons-flex {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .skills {
+    padding: 6.4rem 1rem;
+  }
+  .skills .head-xl {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 950px) {
+  .skills .head-xl {
+    text-align: center;
+  }
+  .icons-flex {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .skills .head-xl {
+    font-size: 6rem;
+  }
+  .icons-flex {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

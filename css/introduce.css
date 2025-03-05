@@ -1,0 +1,65 @@
+.introduce {
+  margin: 6.4rem 0;
+  align-items: center;
+}
+
+.hello {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: -0.8rem;
+}
+
+.front {
+  font-size: 4.8rem;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, rgba(0, 236, 100, 1) 0%, rgba(0, 134, 57, 1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 1.8rem;
+}
+
+.introduce-p {
+  max-width: 46rem;
+  margin-bottom: 3.6rem;
+}
+
+.introduce-btn {
+  padding: 1.6rem 3.2rem;
+  color: var(--bg-color);
+  background: linear-gradient(135deg, rgba(0, 236, 100, 1) 0%, rgba(0, 134, 57, 1) 100%);
+  border-radius: 0.8rem;
+  border: 0.2rem solid rgb(1, 83, 37);
+  box-shadow: rgb(1, 83, 37) 1.95px 1.95px 2.6px;
+  transition: all 0.3s;
+}
+
+.introduce-btn:hover {
+  background: linear-gradient(90deg, rgba(0, 236, 100, 1) 0%, rgba(0, 134, 57, 1) 100%);
+  border: 0.2rem solid rgb(3, 183, 78);
+}
+
+.introduce-btn::after {
+  content: url("../img/download.svg");
+  display: inline-block;
+  margin-left: 0.8rem;
+}
+
+@media (max-width: 800px) {
+  .introduce .head-xxl {
+    font-size: 6.4rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .introduce.grid {
+    grid-template-columns: 1fr;
+  }
+  .introduce-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .introduce {
+    margin: 3.2rem 0;
+  }
+}

@@ -1,9 +1,15 @@
 .projects {
-  padding: 16rem 0 6.4rem 1.6rem;
+  padding: 16rem 1.6rem 6.4rem 1.6rem;
 }
 
 .projects.grid {
   justify-items: start;
+}
+
+.projects-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
 }
 
 .projects .head-xxl {
@@ -39,7 +45,7 @@
   gap: 3.2rem;
   align-items: center;
   background-color: var(--secondary-bg);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: #012b6f32 6px 2px 16px 0px, #012b6f32 -6px -2px 16px 0px;
   border-radius: 0.8rem;
 }
 
@@ -54,6 +60,10 @@
 
 .project-img {
   border-radius: 0 0.8rem 0.8rem 0;
+}
+
+.project-img.vero {
+  border-radius: 0.8rem 0 0 0.8rem;
 }
 
 .projects-flex {
@@ -94,12 +104,19 @@
 }
 .project-btn {
   padding: 0.8rem 1.6rem;
-  color: var(--head-color);
-  background-color: rgba(230, 230, 230, 0.5);
+  color: #fff;
+  background-color: rgba(195, 195, 195, 0.5);
+  box-shadow: #b1b1b1 1.95px 1.95px 2.6px;
   border-radius: 0.8rem;
   border: 0.2rem solid var(--head-color);
   display: flex;
   align-items: center;
+  transition: all 0.3s;
+}
+
+.project-btn:hover {
+  color: #fff;
+  background-color: #030408;
 }
 
 .project-btn.git::after {
@@ -114,4 +131,20 @@
   display: inline-block;
   margin-top: 0.5rem;
   margin-left: 0.8rem;
+}
+
+@media (max-width: 1050px) {
+  .project-info {
+    padding: 2.4rem 4.8rem;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .currentcy {
+    order: -1;
+  }
+  .project-img {
+    border-radius: 0.8rem;
+  }
 }

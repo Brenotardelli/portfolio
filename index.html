@@ -21,13 +21,13 @@
         <nav class="nav js-menu">
             <button class="btn-hamb"></button>
 
-            <ul class="nav-list center">
+            <ul class="nav-list">
                 <li><a class="links-a" href="#about">About</a></li>
-                <li><a class="links-a" href="#about">Projects</a></li>
+                <li><a class="links-a" href="#projects">Projects</a></li>
                 <li><a class="links-a" href="#contact">Contact</a></li>
                 <div class="social-flex">
-                    <li><a href=""><img class="social-nav" src="./img/linkedin.svg" alt=""></a></li>
-                    <li><a href=""><img class="social-nav" src="./img/gitHub.svg" alt=""></a></li>
+                    <li><a href="https://www.linkedin.com/in/brenotardelli/" target="_blank" rel="noopener noreferrer"><img class="social-nav" src="./img/linkedin.svg" alt="Linkedin logo"></a></li>
+                    <li><a href="https://github.com/Brenotardelli" target="_blank" rel="noopener noreferrer"><img class="social-nav" src="./img/gitHub.svg" alt="GitHub logo"></a></li>
                 </div>
             </ul>
 
@@ -48,7 +48,7 @@
             </div>
         </section>
 
-        <section class="container grid about pdn">
+        <section class="container grid about pdn anima-scroll" id="about">
 
             <div>
                 <h2 class="head-xl">About me</h2>
@@ -62,7 +62,7 @@
         </section>
 
 
-        <section class="container grid skills pdn">
+        <section class="container grid skills pdn anima-scroll">
             <div>
                 <h2 class="head-xl">Tools & Technologies</h2>
             </div>
@@ -85,12 +85,12 @@
             </div>
         </section>
 
-        <section class="container projects pdn">
-            <h2 class="head-xxl">PROJECTS</h2>
+        <section class="container projects pdn" id="projects">
+            <h2 class="head-xxl anima-scroll">PROJECTS</h2>
 
             <div class="projects-flex">
 
-                <div class="projects-grid">
+                <div class="projects-grid anima-scroll">
                     <div class="project-info">
                         <h4 class="head-l">SurNest</h4>
                         <p class="project-p">SurfNest is a modern and responsive platform designed for surf enthusiasts. Built with a clean and intuitive UI, the website provides a seamless booking experience while capturing the essence of the surfing lifestyle.</p>
@@ -100,8 +100,8 @@
                             <li>JavaScript</li>
                         </ul>
                         <div class="btn-proj-flex">
-                            <a class="project-btn git" href="">Code</a>
-                            <a class="project-btn live" href="">Live</a>
+                            <a class="project-btn git" href="https://github.com/Brenotardelli/surfnest" target="_blank" rel="noopener noreferrer">Code</a>
+                            <a class="project-btn live" href="https://surfnest.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a>
                         </div>
                     </div>
 
@@ -112,12 +112,66 @@
                 </div>
 
 
+                <div class="projects-grid center anima-scroll">
+
+                    <div>
+                        <img class="project-img currentcy" src="./img/currentcy.jpg" alt="Surfnest project photo">
+                    </div>
+
+
+                    <div class="project-info currentcy">
+                        <h4 class="head-l">CurrenTcy</h4>
+                        <p class="project-p">CurrenTcy is a web application that provides users with real-time foreign exchange rates and currency conversion tools. It offers an intuitive interface for tracking currency values and performing quick conversions between different currencies.</p>
+                        <ul class="techs-flex">
+                            <li>CSS</li>
+                            <li>React</li>
+                            <li>TypeScript</li>
+                        </ul>
+                        <div class="btn-proj-flex">
+                            <a class="project-btn git" href="https://github.com/Brenotardelli/CurrenTcy" target="_blank" rel="noopener noreferrer">Code</a>
+                            <a class="project-btn live" href="https://currentcy-btds.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="projects-grid anima-scroll">
+                    <div class="project-info">
+                        <h4 class="head-l">Vero</h4>
+                        <p class="project-p">Vero is a sleek, modern website designed to provide a seamless user experience with an intuitive interface. The platform features a clean layout, fast loading times, and responsive design, ensuring accessibility across all devices.</p>
+                        <ul class="techs-flex">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <div class="btn-proj-flex">
+                            <a class="project-btn git" href="https://github.com/Brenotardelli/Vero-main" target="_blank" rel="noopener noreferrer">Code</a>
+                            <a class="project-btn live" href="https://vero-main-nine.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <img class="project-img" src="./img/vero.jpg" alt="Surfnest project photo">
+                    </div>
+                </div>
 
             </div>
 
         </section>
-    </main>
 
+        <section class="contact container pdn anima-scroll" id="contact">
+            <h3 class="head-l">contact</h3>
+            <p class="contact-p">Looking for a modern and high-performing website or web application for your business, startup, or personal brand? I'm available for work! Feel free to reach out at <a href="mailto:brenot.dev@gmail.com?subject=Suporte&body=Hello, Let's work together!!"><span class="bold">brenot.dev@gmail.com</span></a>
+            </p>
+        </section>
+    </main>
+    <footer class="container">
+        <div class="dev-flex">
+            <a href="#introduce"><img src="./img/logo-only.svg" alt="logo"></a>
+            <p class="dev-name">Developed by Breno Tardelli</p>
+        </div>
+    </footer>
     <script src="./script.js"></script>
 </body>
 

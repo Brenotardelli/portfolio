@@ -1,5 +1,5 @@
 .introduce {
-  margin: 6.4rem 0;
+  padding: 8rem 1.6rem 6.4rem 1.6rem;
   align-items: center;
 }
 
@@ -60,6 +60,6 @@
     justify-content: center;
   }
   .introduce {
-    margin: 3.2rem 0;
+    padding: 4rem 1.6rem 3.2rem 1.6rem;
   }
 }

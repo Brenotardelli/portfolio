@@ -1,0 +1,45 @@
+.contact .head-l {
+  text-transform: uppercase;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+  padding-bottom: 6.4rem;
+}
+
+.contact .head-l::before {
+  content: url("../img/contact-dec.svg");
+  display: inline-block;
+  margin-right: 0.8rem;
+}
+
+.contact-p {
+  max-width: 52rem;
+}
+
+.dev-flex {
+  display: flex;
+  align-items: center;
+  padding: 1.6rem;
+  position: relative;
+}
+
+.dev-name {
+  font-size: 1.8rem;
+  margin: auto;
+}
+
+.dev-flex::before {
+  content: "";
+  width: 100%;
+  height: 0.2rem;
+  display: block;
+  background-color: var(--text-color);
+  opacity: 25%;
+  border-radius: 0.8rem;
+  position: absolute;
+  top: 0;
+}

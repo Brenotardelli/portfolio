@@ -62,6 +62,7 @@ img {
   font-size: var(--h2);
   color: var(--head-color);
   line-height: var(--line-height-head);
+  font-weight: 400;
 }
 
 .head-l {

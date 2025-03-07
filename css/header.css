@@ -67,6 +67,9 @@
     overflow-x: hidden;
     position: relative;
   }
+  body {
+    overflow-y: hidden;
+  }
   .btn-hamb {
     display: flex;
     align-items: center;
